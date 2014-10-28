@@ -1,0 +1,1051 @@
+/* line 2, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes jiggle {
+  /* line 5, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: rotate(-2deg);
+  }
+
+  /* line 8, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -webkit-transform: rotate(2deg);
+  }
+
+  /* line 11, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: rotate(-2deg);
+  }
+}
+
+@-moz-keyframes jiggle {
+  /* line 5, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -moz-transform: rotate(-2deg);
+  }
+
+  /* line 8, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -moz-transform: rotate(2deg);
+  }
+
+  /* line 11, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -moz-transform: rotate(-2deg);
+  }
+}
+
+@keyframes jiggle {
+  /* line 5, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+
+  /* line 8, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -webkit-transform: rotate(2deg);
+    -moz-transform: rotate(2deg);
+    -ms-transform: rotate(2deg);
+    -o-transform: rotate(2deg);
+    transform: rotate(2deg);
+  }
+
+  /* line 11, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  }
+}
+
+@-webkit-keyframes scrollbg {
+  /* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    background-position: 0% 0px;
+  }
+
+  /* line 18, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    background-position: 100% 0px;
+  }
+}
+
+@-moz-keyframes scrollbg {
+  /* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    background-position: 0% 0px;
+  }
+
+  /* line 18, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    background-position: 100% 0px;
+  }
+}
+
+@keyframes scrollbg {
+  /* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    background-position: 0% 0px;
+  }
+
+  /* line 18, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    background-position: 100% 0px;
+  }
+}
+
+@-webkit-keyframes loading {
+  /* line 22, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    background-position: 0px 0px;
+  }
+
+  /* line 25, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    background-position: 64px 0px;
+  }
+}
+
+@-moz-keyframes loading {
+  /* line 22, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    background-position: 0px 0px;
+  }
+
+  /* line 25, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    background-position: 64px 0px;
+  }
+}
+
+@keyframes loading {
+  /* line 22, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    background-position: 0px 0px;
+  }
+
+  /* line 25, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    background-position: 64px 0px;
+  }
+}
+
+@-webkit-keyframes notify {
+  /* line 29, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    height: 0px;
+  }
+
+  /* line 31, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    height: 46.5px;
+  }
+}
+
+@-moz-keyframes notify {
+  /* line 29, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    height: 0px;
+  }
+
+  /* line 31, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    height: 46.5px;
+  }
+}
+
+@keyframes notify {
+  /* line 29, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    height: 0px;
+  }
+
+  /* line 31, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    height: 46.5px;
+  }
+}
+
+@-webkit-keyframes zoom {
+  /* line 35, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: scale(2);
+  }
+
+  /* line 37, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes zoom {
+  /* line 35, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -moz-transform: scale(2);
+  }
+
+  /* line 37, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  /* line 35, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+
+  /* line 37, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pop {
+  /* line 41, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 43, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -webkit-transform: scale(2);
+  }
+
+  /* line 45, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pop {
+  /* line 41, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 43, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -moz-transform: scale(2);
+  }
+
+  /* line 45, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes pop {
+  /* line 41, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 43, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    transform: scale(2);
+  }
+
+  /* line 45, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fade {
+  /* line 49, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 51, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fade {
+  /* line 49, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 51, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  /* line 49, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    opacity: 0;
+  }
+
+  /* line 51, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rotate {
+  /* line 55, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    -webkit-transform: rotateZ(0deg);
+  }
+
+  /* line 57, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    -webkit-transform: rotateZ(359deg);
+  }
+}
+
+@-moz-keyframes rotate {
+  /* line 55, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    -moz-transform: rotateZ(0deg);
+  }
+
+  /* line 57, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    -moz-transform: rotateZ(359deg);
+  }
+}
+
+@keyframes rotate {
+  /* line 55, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    -webkit-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
+  }
+
+  /* line 57, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    -webkit-transform: rotateZ(359deg);
+    -moz-transform: rotateZ(359deg);
+    -ms-transform: rotateZ(359deg);
+    -o-transform: rotateZ(359deg);
+    transform: rotateZ(359deg);
+  }
+}
+
+@-webkit-keyframes scroll {
+  /* line 61, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 63, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@-moz-keyframes scroll {
+  /* line 61, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 63, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes scroll {
+  /* line 61, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    background-position: 0 0;
+  }
+
+  /* line 63, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    background-position: 100% 0;
+  }
+}
+
+@-webkit-keyframes shine {
+  /* line 67, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    opacity: 0.5;
+  }
+
+  /* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes shine {
+  /* line 67, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    opacity: 0.5;
+  }
+
+  /* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes shine {
+  /* line 67, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    opacity: 0.5;
+  }
+
+  /* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide {
+  /* line 73, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    left: 0;
+    right: auto;
+  }
+
+  /* line 76, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    right: 0;
+    left: auto;
+  }
+}
+
+@-moz-keyframes slide {
+  /* line 73, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    left: 0;
+    right: auto;
+  }
+
+  /* line 76, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    right: 0;
+    left: auto;
+  }
+}
+
+@keyframes slide {
+  /* line 73, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    left: 0;
+    right: auto;
+  }
+
+  /* line 76, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    right: 0;
+    left: auto;
+  }
+}
+
+@-webkit-keyframes flash {
+  /* line 81, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    background-color: #ffffaa;
+  }
+
+  /* line 83, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    background-color: rgba(255, 255, 170, 0);
+  }
+}
+
+@-moz-keyframes flash {
+  /* line 81, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    background-color: #ffffaa;
+  }
+
+  /* line 83, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    background-color: rgba(255, 255, 170, 0);
+  }
+}
+
+@keyframes flash {
+  /* line 81, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  from {
+    background-color: #ffffaa;
+  }
+
+  /* line 83, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  to {
+    background-color: rgba(255, 255, 170, 0);
+  }
+}
+
+@-webkit-keyframes pulse {
+  /* line 87, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 89, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  30% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 91, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -webkit-transform: scale(1.4);
+  }
+
+  /* line 93, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  70% {
+    -webkit-transform: scale(1);
+  }
+
+  /* line 95, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  80% {
+    -webkit-transform: scale(1.2);
+  }
+
+  /* line 97, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  /* line 87, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 89, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  30% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 91, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -moz-transform: scale(1.4);
+  }
+
+  /* line 93, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  70% {
+    -moz-transform: scale(1);
+  }
+
+  /* line 95, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  80% {
+    -moz-transform: scale(1.2);
+  }
+
+  /* line 97, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  /* line 87, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 89, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  30% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 91, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  50% {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    transform: scale(1.4);
+  }
+
+  /* line 93, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  70% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+
+  /* line 95, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  80% {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  /* line 97, /home/daniel/Code/glossre/app/assets/stylesheets/_animations.css.sass */
+  100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* line 3, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities {
+  display: block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 15, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+ul.activities:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 10, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities.loading:after {
+  -webkit-animation: pulse 1s linear 0s infinite;
+  -moz-animation: pulse 1s linear 0s infinite;
+  animation: pulse 1s linear 0s infinite;
+  content: "";
+  display: block;
+  width: 4em;
+  height: 4em;
+  margin: 4em auto;
+  background: url("/assets/glossre_icon.png") no-repeat;
+  background-image: url("/assets/glossre_icon.svg"), none;
+  background-size: 100%;
+}
+/* line 22, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity {
+  position: relative;
+  max-width: 30em;
+  margin: 0 auto 0.875em auto;
+  padding: 0.5em;
+}
+/* line 28, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity:last-child {
+  margin-bottom: 0;
+}
+/* line 2, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+ul.activities li.activity > section.description > p, ul.activities li.activity > section.description > time {
+  margin: 0 0 0 52px;
+  text-align: left;
+  color: gray;
+}
+/* line 8, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+ul.activities li.activity > section.description.no-image > p, ul.activities li.activity > section.description.no-image > time {
+  margin-left: 0;
+}
+/* line 11, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+ul.activities li.activity > section.description > time {
+  display: block;
+  font-size: 90%;
+  color: darkgrey;
+}
+/* line 16, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+ul.activities li.activity > section.description > img, ul.activities li.activity > section.description > a img {
+  position: relative;
+  float: left;
+  width: 4em;
+  height: 4em;
+  margin: 0 0.5em 0.5em 0;
+}
+/* line 23, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+ul.activities li.activity > section.description > img:not([src]):after, ul.activities li.activity > section.description > a img:not([src]):after {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  display: none;
+  content: "\e058";
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  font-family: "Glossre Icons";
+  margin: auto;
+  color: gainsboro;
+}
+/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation {
+  border-radius: 3px;
+  margin: 8px 0;
+  border: 1px solid #10a6bd;
+  padding: 4px;
+}
+/* line 132, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+/* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation > p {
+  clear: both;
+  position: relative;
+  min-height: 28px;
+  margin: 0 0 0 24px;
+  padding: 4px 8px 4px 12px;
+  font-style: italic;
+  color: dimgrey;
+  word-wrap: break-word;
+}
+/* line 14, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation > p i {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: -20px;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  margin: auto 0;
+  font-size: 24px;
+  text-shadow: none;
+}
+/* line 24, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation > p i.note {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: inline-block;
+}
+/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.note:after {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.note:before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "\e06e";
+  z-index: 0;
+  text-align: center;
+  font-family: "Glossre Icons";
+  color: #10a6bd;
+}
+/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.note:hover:before, ul.activities li.activity > section.annotation > p i.note.active:before {
+  color: #10a6bd;
+}
+/* line 26, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation > p i.like {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: inline-block;
+}
+/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.like:after {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.like:before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "\e06e";
+  z-index: 0;
+  text-align: center;
+  font-family: "Glossre Icons";
+  color: #c5032d;
+}
+/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.like:hover:before, ul.activities li.activity > section.annotation > p i.like.active:before {
+  color: #c5032d;
+}
+/* line 28, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation > p i.comment {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: inline-block;
+}
+/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.comment:after {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.comment:before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "\e06e";
+  z-index: 0;
+  text-align: center;
+  font-family: "Glossre Icons";
+  color: #ff4f07;
+}
+/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.comment:hover:before, ul.activities li.activity > section.annotation > p i.comment.active:before {
+  color: #ff4f07;
+}
+/* line 30, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+ul.activities li.activity > section.annotation > p i.question {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: inline-block;
+}
+/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.question:after {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.question:before {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  content: "\e06e";
+  z-index: 0;
+  text-align: center;
+  font-family: "Glossre Icons";
+  color: #609658;
+}
+/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.annotation > p i.question:hover:before, ul.activities li.activity > section.annotation > p i.question.active:before {
+  color: #609658;
+}
+/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview {
+  position: relative;
+}
+/* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > h3 {
+  border-radius: 3px;
+  margin: 8px 0;
+  border: 1px solid #10a6bd;
+  padding: 4px;
+}
+/* line 132, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+ul.activities li.activity > section.preview > h3 i {
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+}
+/* line 7, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > img, ul.activities li.activity > section.preview > a img {
+  display: block;
+  width: 100%;
+  background-image: url("/assets/image_placeholder.svg"), none;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+}
+/* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > img.thumbnail, ul.activities li.activity > section.preview > a img.thumbnail {
+  display: inline-block;
+  vertical-align: middle;
+  width: 240px;
+  margin-right: 8px;
+}
+@media screen and (max-width: 640px) {
+  /* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+  ul.activities li.activity > section.preview > img.thumbnail, ul.activities li.activity > section.preview > a img.thumbnail {
+    width: 140px;
+  }
+}
+/* line 24, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > p {
+  border-radius: 3px;
+  margin: 4px 0 0 0;
+  padding: 4px 8px;
+  color: gray;
+  background-color: whitesmoke;
+}
+/* line 32, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > aside.details {
+  display: inline-block;
+  vertical-align: top;
+  color: gray;
+}
+/* line 37, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > aside.details h1, ul.activities li.activity > section.preview > aside.details h2, ul.activities li.activity > section.preview > aside.details h3, ul.activities li.activity > section.preview > aside.details h4, ul.activities li.activity > section.preview > aside.details h5, ul.activities li.activity > section.preview > aside.details h6 {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-weight: bold;
+}
+/* line 43, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > footer {
+  border-radius: 3px;
+  margin: 4px 0 0 0;
+  padding: 4px 8px;
+  text-align: center;
+  font-style: italic;
+  color: gray;
+  background-color: whitesmoke;
+}
+/* line 53, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview .annotation {
+  z-index: 1;
+}
+/* line 57, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview .annotation i.pin.active {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+/* line 60, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview .annotation i.pin.active:hover {
+  -webkit-animation: none;
+  -moz-animation: none;
+  animation: none;
+}
+/* line 63, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview .friendship {
+  max-width: 128px;
+  margin: auto;
+  border: none;
+}
+/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions {
+  margin-top: 8px;
+  color: darkgrey;
+}
+/* line 5, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a {
+  float: right;
+  width: 33%;
+  margin-right: 0.5%;
+  outline: none;
+  color: darkgrey;
+  text-align: center;
+}
+/* line 13, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a:last-of-type {
+  margin-right: 0;
+}
+/* line 16, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a:hover > i {
+  color: darkgrey;
+}
+/* line 19, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a > i.active {
+  color: #10a6bd;
+}
+/* line 22, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a > i.active.comment {
+  color: #ff4f07;
+}
+/* line 25, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a > i.active.like, ul.activities li.activity > section.actions a > i.active.remove {
+  color: #c5032d;
+}
+/* line 28, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a span.comment-count:after {
+  content: counter(comments);
+}
+/* line 31, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity[data-owned] > section.actions a {
+  width: 19.5%;
+  margin-right: 0.5%;
+}
+/* line 36, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity > section {
+  font-size: 0.875em;
+}
+/* line 15, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
+ul.activities li.activity > section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 40, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity > section h1, ul.activities li.activity > section h2, ul.activities li.activity > section h3, ul.activities li.activity > section h4, ul.activities li.activity > section h5, ul.activities li.activity > section h6 {
+  text-align: center;
+  background-color: transparent;
+}
+/* line 44, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity > section img {
+  max-width: 100%;
+  border: 0.125em solid gainsboro;
+  border-radius: 0.25em;
+  padding: 0.25em;
+  background-color: white;
+}
+/* line 51, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity > section .active[data-annotation-id] {
+  -webkit-animation: flash 600ms;
+  -moz-animation: flash 600ms;
+  animation: flash 600ms;
+}
+/* line 54, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity > footer {
+  margin-top: 0.5em;
+  font-size: 0.75em;
+  text-align: right;
+  color: darkgrey;
+}
+/* Activity CSS Manifest
+ *
+ * require core
+
+ *
+ */
+
