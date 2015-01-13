@@ -127,7 +127,7 @@ h5 {
 h6 {
   font-size: 14px;
 }
-/* line 2, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /home/daniel/.rvm/gems/ruby-2.2.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -762,7 +762,7 @@ h6 {
   }
 }
 
-/* line 2, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /home/daniel/.rvm/gems/ruby-2.2.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4624,7 +4624,7 @@ ul.activities li.activity > section.actions a span.comment-count:after {
   content: counter(comments);
 }
 /* line 35, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
-ul.activities li.activity[data-owned] > section.actions a {
+ul.activities li.activity > section.actions[data-owned] > a {
   width: 19.5%;
   margin-right: 0.5%;
 }
