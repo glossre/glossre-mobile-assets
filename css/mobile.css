@@ -127,7 +127,7 @@ h5 {
 h6 {
   font-size: 14px;
 }
-/* line 2, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /home/daniel/.rvm/gems/ruby-2.2.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -762,7 +762,7 @@ h6 {
   }
 }
 
-/* line 2, /home/daniel/.rvm/gems/ruby-2.1.2@glossre/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+/* line 2, /home/daniel/.rvm/gems/ruby-2.2.0/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -4284,31 +4284,36 @@ ul.activities li.activity {
 ul.activities li.activity:last-child {
   margin-bottom: 0;
 }
-/* line 2, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+ul.activities li.activity > section.description {
+  min-height: 56px;
+}
+/* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
 ul.activities li.activity > section.description > p, ul.activities li.activity > section.description > time {
   margin: 0 0 0 52px;
   text-align: left;
   color: gray;
 }
-/* line 8, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+/* line 10, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
 ul.activities li.activity > section.description.no-image > p, ul.activities li.activity > section.description.no-image > time {
   margin-left: 0;
 }
-/* line 11, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+/* line 13, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
 ul.activities li.activity > section.description > time {
   display: block;
   font-size: 90%;
   color: darkgrey;
 }
-/* line 16, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+/* line 18, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
 ul.activities li.activity > section.description > img, ul.activities li.activity > section.description > a img {
+  border-radius: 50%;
   position: relative;
   float: left;
   width: 4em;
   height: 4em;
   margin: 0 0.5em 0.5em 0;
 }
-/* line 23, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
+/* line 27, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_description.css.sass */
 ul.activities li.activity > section.description > img:not([src]):after, ul.activities li.activity > section.description > a img:not([src]):after {
   position: absolute;
   top: 0px;
@@ -4324,20 +4329,7 @@ ul.activities li.activity > section.description > img:not([src]):after, ul.activ
   margin: auto;
   color: gainsboro;
 }
-/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
-ul.activities li.activity > section.annotation {
-  border-radius: 3px;
-  margin: 8px 0;
-  border: 1px solid #10a6bd;
-  padding: 4px;
-}
-/* line 161, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation i {
-  width: 24px;
-  height: 24px;
-  font-size: 24px;
-}
-/* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+/* line 2, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
 ul.activities li.activity > section.annotation > p {
   clear: both;
   position: relative;
@@ -4348,7 +4340,7 @@ ul.activities li.activity > section.annotation > p {
   color: dimgrey;
   word-wrap: break-word;
 }
-/* line 14, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
+/* line 12, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
 ul.activities li.activity > section.annotation > p i {
   position: absolute;
   top: 0px;
@@ -4356,150 +4348,29 @@ ul.activities li.activity > section.annotation > p i {
   bottom: 0px;
   left: -20px;
   z-index: 1;
-  width: 24px;
-  height: 24px;
+  cursor: pointer;
   margin: auto 0;
-  font-size: 24px;
-  text-shadow: none;
-}
-/* line 24, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
-ul.activities li.activity > section.annotation > p i.note {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  display: inline-block;
-}
-/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.note:after {
-  position: relative;
-  color: white;
-  z-index: 1;
-}
-/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.note:before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  content: "\e06e";
-  z-index: 0;
-  text-align: center;
-  font-family: "Glossre Icons";
-  color: #10a6bd;
-}
-/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.note:hover:before, ul.activities li.activity > section.annotation > p i.note.active:before {
-  color: #10a6bd;
-}
-/* line 26, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
-ul.activities li.activity > section.annotation > p i.like {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  display: inline-block;
-}
-/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.like:after {
-  position: relative;
-  color: white;
-  z-index: 1;
-}
-/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.like:before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  content: "\e06e";
-  z-index: 0;
-  text-align: center;
-  font-family: "Glossre Icons";
-  color: #c5032d;
-}
-/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.like:hover:before, ul.activities li.activity > section.annotation > p i.like.active:before {
-  color: #c5032d;
-}
-/* line 28, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
-ul.activities li.activity > section.annotation > p i.comment {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  display: inline-block;
-}
-/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.comment:after {
-  position: relative;
-  color: white;
-  z-index: 1;
-}
-/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.comment:before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  content: "\e06e";
-  z-index: 0;
-  text-align: center;
-  font-family: "Glossre Icons";
-  color: #ff4f07;
-}
-/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.comment:hover:before, ul.activities li.activity > section.annotation > p i.comment.active:before {
-  color: #ff4f07;
-}
-/* line 30, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_annotation.css.sass */
-ul.activities li.activity > section.annotation > p i.question {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  display: inline-block;
-}
-/* line 47, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.question:after {
-  position: relative;
-  color: white;
-  z-index: 1;
-}
-/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.question:before {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  content: "\e06e";
-  z-index: 0;
-  text-align: center;
-  font-family: "Glossre Icons";
-  color: #609658;
-}
-/* line 69, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
-ul.activities li.activity > section.annotation > p i.question:hover:before, ul.activities li.activity > section.annotation > p i.question.active:before {
-  color: #609658;
+  color: gainsboro;
 }
 /* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview {
   position: relative;
 }
 /* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
-ul.activities li.activity > section.preview > h3 {
-  border-radius: 3px;
-  margin: 8px 0;
-  border: 1px solid #10a6bd;
-  padding: 4px;
+ul.activities li.activity > section.preview:not(:empty) {
+  padding: 0px 8px 8px 8px;
 }
-/* line 161, /home/daniel/Code/glossre/app/assets/stylesheets/base.css.sass */
+/* line 7, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+ul.activities li.activity > section.preview > h3 {
+  margin-bottom: 8px;
+}
+/* line 10, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > h3 i {
   width: 24px;
   height: 24px;
   font-size: 24px;
 }
-/* line 7, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > img, ul.activities li.activity > section.preview > a img {
   display: block;
   width: 100%;
@@ -4508,7 +4379,7 @@ ul.activities li.activity > section.preview > img, ul.activities li.activity > s
   background-position: center center;
   background-size: 100%;
 }
-/* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 23, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > img.thumbnail, ul.activities li.activity > section.preview > a img.thumbnail {
   display: inline-block;
   vertical-align: middle;
@@ -4516,53 +4387,57 @@ ul.activities li.activity > section.preview > img.thumbnail, ul.activities li.ac
   margin-right: 8px;
 }
 @media screen and (max-width: 640px) {
-  /* line 15, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+  /* line 23, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
   ul.activities li.activity > section.preview > img.thumbnail, ul.activities li.activity > section.preview > a img.thumbnail {
     width: 140px;
   }
 }
-/* line 24, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 32, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > p {
   border-radius: 3px;
+  display: inline-block;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   margin: 4px 0 0 0;
   padding: 4px 8px;
   color: gray;
-  background-color: whitesmoke;
 }
-/* line 32, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 40, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > aside.details {
   display: inline-block;
   vertical-align: top;
   color: gray;
 }
-/* line 37, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 45, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > aside.details h1, ul.activities li.activity > section.preview > aside.details h2, ul.activities li.activity > section.preview > aside.details h3, ul.activities li.activity > section.preview > aside.details h4, ul.activities li.activity > section.preview > aside.details h5, ul.activities li.activity > section.preview > aside.details h6 {
   margin: 0;
   padding: 0;
   text-align: left;
   font-weight: bold;
 }
-/* line 43, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 51, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview > footer {
   border-radius: 3px;
   margin: 4px 0 0 0;
   padding: 4px 8px;
   text-align: center;
+  font-size: 90%;
   font-style: italic;
   color: gray;
-  background-color: whitesmoke;
 }
-/* line 53, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 61, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview .annotation {
   display: none;
   position: absolute;
   z-index: 1;
 }
-/* line 58, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 66, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview .annotation:last-of-type {
   display: block;
 }
-/* line 62, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 70, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview .annotation > i.active {
   -webkit-transform: scale(1.5);
   -moz-transform: scale(1.5);
@@ -4570,13 +4445,13 @@ ul.activities li.activity > section.preview .annotation > i.active {
   -o-transform: scale(1.5);
   transform: scale(1.5);
 }
-/* line 65, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 73, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview .annotation > i.active:hover {
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
 }
-/* line 68, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
+/* line 76, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_preview.css.sass */
 ul.activities li.activity > section.preview .friendship {
   max-width: 128px;
   margin: auto;
@@ -4585,48 +4460,36 @@ ul.activities li.activity > section.preview .friendship {
 /* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
 ul.activities li.activity > section.actions {
   border-radius: 3px;
-  margin-top: 8px;
-  border: 1px solid gainsboro;
-  padding: 0px;
-  color: darkgrey;
 }
-/* line 9, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+/* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
 ul.activities li.activity > section.actions a {
-  float: right;
-  width: 33%;
-  margin-right: 0.5%;
+  border-radius: 3px;
+  display: inline-block;
   outline: none;
-  text-align: center;
+  padding: 4px;
+  margin-right: 4px;
   color: darkgrey;
+  background: whitesmoke;
+}
+/* line 14, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a:hover > i {
+  color: inherit;
 }
 /* line 17, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
-ul.activities li.activity > section.actions a:last-of-type {
-  margin-right: 0;
-}
-/* line 20, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
-ul.activities li.activity > section.actions a:hover > i {
-  color: darkgrey;
-}
-/* line 23, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
 ul.activities li.activity > section.actions a > i.active {
   color: #10a6bd;
 }
-/* line 26, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+/* line 20, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
 ul.activities li.activity > section.actions a > i.active.comment {
   color: #ff4f07;
 }
-/* line 29, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+/* line 23, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
 ul.activities li.activity > section.actions a > i.active.like, ul.activities li.activity > section.actions a > i.active.remove {
   color: #c5032d;
 }
-/* line 32, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
-ul.activities li.activity > section.actions a span.comment-count:after {
-  content: counter(comments);
-}
-/* line 35, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
-ul.activities li.activity[data-owned] > section.actions a {
-  width: 19.5%;
-  margin-right: 0.5%;
+/* line 26, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_actions.css.sass */
+ul.activities li.activity > section.actions a > small:empty {
+  display: none;
 }
 /* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_shares.css.sass */
 ul.activities li.activity > section.shares {
@@ -4659,42 +4522,61 @@ ul.activities li.activity > section.shares a:last-of-type {
 ul.activities li.activity > section.shares a > i {
   width: 100%;
 }
-/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_comments.css.sass */
-ul.activities li.activity > section.comments.active {
-  -webkit-animation: fade 300ms;
-  -moz-animation: fade 300ms;
-  animation: fade 300ms;
+/* line 3, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_comments.css.sass */
+ul.activities li.activity > section.comments.active ~ form.new_comment.active, ul.activities li.activity > section.comments.active > form.new_comment.active {
+  margin: 8px 0px;
 }
-/* line 38, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+/* line 1, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_likes.css.sass */
+ul.activities li.activity > section.likes {
+  counter-reset: likes;
+}
+/* line 4, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_likes.css.sass */
+ul.activities li.activity > section.likes:not(:empty):before {
+  content: "\e057";
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  font-family: "Glossre Icons";
+  color: gainsboro;
+}
+/* line 14, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_likes.css.sass */
+ul.activities li.activity > section.likes > a {
+  counter-increment: likes;
+  font-size: 90%;
+}
+/* line 18, /home/daniel/Code/glossre/app/assets/stylesheets/activities/_likes.css.sass */
+ul.activities li.activity > section.likes > a:not(:last-child):after {
+  content: ", ";
+}
+/* line 39, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
 ul.activities li.activity > section {
   font-size: 0.875em;
 }
-/* line 15, /home/daniel/.rvm/gems/ruby-2.2.0/gems/bourbon-3.2.3/app/assets/stylesheets/addons/_clearfix.scss */
-ul.activities li.activity > section:after {
-  content: "";
-  display: table;
-  clear: both;
+/* line 43, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+ul.activities li.activity > section.description:not(:empty), ul.activities li.activity > section.preview:not(:empty), ul.activities li.activity > section.comments:not(:empty) {
+  margin-bottom: 8px;
+  border-bottom: 1px solid gainsboro;
+  padding-bottom: 8px;
 }
-/* line 42, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+/* line 48, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
 ul.activities li.activity > section h1, ul.activities li.activity > section h2, ul.activities li.activity > section h3, ul.activities li.activity > section h4, ul.activities li.activity > section h5, ul.activities li.activity > section h6 {
   text-align: center;
   background-color: transparent;
 }
-/* line 46, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+/* line 52, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
 ul.activities li.activity > section img {
+  border-radius: 3px;
   max-width: 100%;
-  border: 0.125em solid gainsboro;
-  border-radius: 0.25em;
-  padding: 0.25em;
-  background-color: white;
 }
-/* line 53, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+/* line 57, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
 ul.activities li.activity > section .active[data-annotation-id] {
   -webkit-animation: flash 600ms;
   -moz-animation: flash 600ms;
   animation: flash 600ms;
 }
-/* line 56, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
+/* line 60, /home/daniel/Code/glossre/app/assets/stylesheets/activities/activity.css.sass */
 ul.activities li.activity > footer {
   margin-top: 0.5em;
   font-size: 0.75em;
